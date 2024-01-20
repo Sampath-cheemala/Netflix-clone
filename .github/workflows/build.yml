@@ -39,7 +39,7 @@ jobs:
           #run commands to build and push docker images
           docker build --build-arg TMDB_V3_API_KEY=ebd43ef8b0eaff316d6fc006f1898028 -t netflix .
           docker tag netflix sevenajay/netflix:latest
-          docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_TOKEN }}
+          docker login -u yesdan5 -p dckr_pat_Lwu775lX0jiY8X9fi2ohMTguOt4
           docker push yesdan5/netflix:latest  
         env:
           DOCKER_CLI_ACI: 1
